@@ -43,6 +43,10 @@ body { background: #f1f0f6;}
 .aic {
     align-items: center;
 }
+ /* 垂直底部 */
+.aie {
+    align-items: end;
+}
  /* 分配剩余空间 */
 .fg1 { flex-grow: 1; }
 .fg2 { flex-grow: 2; }

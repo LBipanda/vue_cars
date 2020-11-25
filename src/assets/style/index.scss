@@ -1,6 +1,18 @@
+@import './sassConfig.scss';
+
 @import './rerset.scss';
 @import './common.scss';
 
-// body{
-//     background-color: red;
-// }
+i[class^=icon]{//获取类名开头为 icon 的标签
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 44px;
+    font-size: 34px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: $color-main;
+    cursor: pointer;
+}
