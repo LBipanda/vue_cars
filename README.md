@@ -1,4 +1,4 @@
-# vue_map
+# vue_cars
 
 ## Project setup
 ```
