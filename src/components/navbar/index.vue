@@ -3,11 +3,11 @@
     <div class="navbar-wrap">
         <ul class="fcc">
             <!-- <li><i class="icon iconfont" v-for="(item,index) in iInfo" :key="index">{{item.name}}</i></li> -->
-            <li><i class="icon iconfont">&#xe67f;</i></li>
-            <li><i class="icon iconfont">&#xe6e4;</i></li>
+            <li><i class="iconNav iconfont">&#xe67f;</i></li>
+            <li><i class="iconNav iconfont">&#xe6e4;</i></li>
             <li class="slecetCar"><p>选择车辆</p></li>
-            <li><i class="icon iconfont">&#xe619;</i></li>
-            <li><i class="icon iconfont">&#xe9c7;</i></li>
+            <li><i class="iconNav iconfont">&#xe619;</i></li>
+            <li><i class="iconNav iconfont">&#xe9c7;</i></li>
             
         </ul>
     </div>

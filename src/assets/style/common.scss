@@ -9,12 +9,15 @@ body { background: #f1f0f6;}
 .rel { position: relative; }
 .abs { position: absolute; }
 .tac { text-align: center; }
+.tae { text-align: end; }
 .lh15 { line-height: 1.5; }
  /* 颜色 */
 .f999 { color: #999; }
+.e1e1e1 { color: #e1e1e1 }
 .fff { color: #ffffff; }
  /* 背景颜色 */
 .bg-green { background: green; }
+.bg-e1 { background: #e1e1e1; }
 .bg-gray { background: gray; }
 .bg-fff { background: #ffffff; }
 
@@ -54,6 +57,7 @@ body { background: #f1f0f6;}
 
  /* 字体设置 */
 .f0 {font-size:0px}
+.f5 {font-size:5px}
 .f8 {font-size:8px}
 .f10 {font-size:10px}
 .f12 {font-size:12px}
@@ -64,6 +68,17 @@ body { background: #f1f0f6;}
 .f22 {font-size:22px}
 .f24 {font-size:24px}
 .f26 {font-size:26px}
+
+// 字体加粗
+.fw{
+  font-weight: bold;
+}
+
+// padding内边距
+.pd5{ padding: 5px; }
+.pd10{ padding: 10px; }
+.pd15{ padding: 15px; }
+.pd20{ padding: 20px; }
 
  /* margin-top设置 */
 .mt-5 {margin-top: 5px;}

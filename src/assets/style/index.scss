@@ -3,7 +3,7 @@
 @import './rerset.scss';
 @import './common.scss';
 
-i[class^=icon]{//获取类名开头为 icon 的标签
+i[class^=iconNav]{//获取类名开头为 icon 的标签
     display: inline-block;
     width: 44px;
     height: 44px;
@@ -14,5 +14,8 @@ i[class^=icon]{//获取类名开头为 icon 的标签
     color: #ffffff;
     margin-right: 10px;
     background-color: $color-main;
+    cursor: pointer;
+}
+.iconfont{
     cursor: pointer;
 }

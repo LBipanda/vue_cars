@@ -61,6 +61,9 @@ export default {
     .cars-swipe-wrap{
         padding: 0 150px;
 
+        .swiper-container{
+            overflow: initial;
+        }
         .swiper-button-prev,
         .swiper-button-next{
             top: 50%;
