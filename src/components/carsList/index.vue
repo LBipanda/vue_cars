@@ -51,16 +51,28 @@
                     <span class="e-bg"></span>
                 </div>
             </div>
-            <p class="f5 f999 tac mt-10 mb-15">取车约支付12.0元停车费，实际补贴12.0元</p>
-            <div class="bg-e1 flex jc-sb pd10 br">
-                <p>日租车</p><p>￥ 300/1天</p>
+            <p class="f8 f999 tac mt-10 mb-15">取车约支付12.0元停车费，实际补贴12.0元</p>
+            <div class="bg-e1 flex jc-sb pd10 br mb-10" v-for="(item,index) in carsPriceList" :key="index">
+                <p>{{item.name}}</p><p>￥ {{item.value}}</p>
             </div>
+            <div class="agreement f10"> 参保 《全面保障服务》 用车更放心 <i class="active"></i></div>
+            <div class="cars-btn">预约用车</div>
         </div>
     </section>
 </template>
 
 <script>
 export default {
+    data(){
+        return{
+            carsPriceList:[
+                { name: "日租车", value: "300/1天"},
+                { name: "3日租车", value: "499.00/3天"},
+                { name: "5日租车", value: "799.00/5天"},
+                { name: "小时租车", value: "99.00/1时"},
+            ]
+        }
+    }
 }
 </script>
 
@@ -103,7 +115,7 @@ export default {
     }
 }
 .cars-itemDetail{
-    height: 600px;
+    height: 720px;
     position: absolute;
     left: 0;
     right: 0;
@@ -145,6 +157,43 @@ export default {
     }
     .br{
         border-radius: 10px;
+    }
+    .agreement{
+        i{
+            float: right;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #cccccc;
+            &::before{
+                content: "";
+                display: block;
+                width: 12px;
+                height: 6px;
+                margin: 4px 0 0 3px;
+                border-left: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                @include webkitA(transform,rotate(-45deg))
+            }
+            &.active{//选中状态
+                background-color: black;
+            }
+        }
+    }
+    .cars-btn{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        height: 44px;
+        width: 150px;
+        margin-left: -75px;
+        border-radius: 22px;
+        text-align: center;
+        line-height: 44px;
+        font-size: 26px;
+        color: #ffffff;
+        margin-right: 34px;
+        background-color: $color-main;
     }
 }
 
