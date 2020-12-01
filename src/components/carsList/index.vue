@@ -115,6 +115,7 @@ export default {
     }
 }
 .cars-itemDetail{
+    display: none;
     height: 720px;
     position: absolute;
     left: 0;

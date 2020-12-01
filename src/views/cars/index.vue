@@ -1,6 +1,5 @@
 <template>
     <div class="cars-wrap">
-        <span @click="user">汽车列表</span>
         <div class="cars-swipe-wrap">
             <swiper class="swiper" ref="swiper" :options="swiperOption">
                 <swiper-slide v-for="(item,index) in 7" :key="index">
@@ -40,11 +39,6 @@ export default {
         }
     },
     methods: {
-        user(){
-            this.$router.push({
-                name: "User"
-            })
-        },
 
     }
 }

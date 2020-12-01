@@ -29,7 +29,14 @@ export default {
         }
     },
     mounted(){
-        
+        document.addEventListener("mouseup",(e)=> {
+            const isHaveChildren = document.querySelector(".children-wrap");
+            if(isHaveChildren && !isHaveChildren.contains(e.target)){
+                this.$router.push({
+                    name: "Index",
+                })
+            }
+        })
     },
     computed: {
         userShow(){
@@ -37,8 +44,9 @@ export default {
             return router.name == "Index" ? true : false;
         }
     },
-    watch: {
-    },
+    methods:{
+
+    }
 }
 </script>
 
