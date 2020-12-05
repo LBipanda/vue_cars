@@ -12,8 +12,25 @@ const routes = [
       {
         path: "user",
         name: "User",
-        component: () => import("@/views/user/index.vue")
-      }
+        component: () => import("@/views/user/index.vue"),
+        children: [
+          {
+            path: "safety",
+            name: "Safety",
+            component: () => import("@/views/user/safety.vue"),
+          },
+          {
+            path: "editPassword",
+            name: "EditPassword",
+            component: () => import("@/views/safety/editPassword.vue"),
+          },
+        ]
+      },
+      // {
+      //   path: "safety",
+      //   name: "safety",
+      //   component: () => import("@/views/user/safety.vue"),
+      // }
     ]
   },
   
